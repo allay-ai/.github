@@ -1,150 +1,41 @@
-# 🎮 McBuddy AI
+# 💬 MCBuddy
 
-[![AI Capable](https://img.shields.io/badge/AI-Capable-brightgreen?style=flat&logo=openai&logoColor=white)](https://github.com/mcbuddy-ai)
-[![Minecraft](https://img.shields.io/badge/Minecraft-1.21+-ED8106?style=flat&logo=minecraft&logoColor=white)](https://www.minecraft.net/)
-[![Telegram](https://img.shields.io/badge/Telegram-Bot-26A5E4?style=flat&logo=telegram&logoColor=white)](https://telegram.org/)
+**MCBuddy** is an AI buddy for Minecraft players. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. The assistant knows Java Edition inside out, searches the web for fresh facts, remembers each player, and answers in the language of the question.
 
-**McBuddy** — это экосистема AI-ассистента для Minecraft, который помогает игрокам прямо в игре и за её пределами! 🚀
+## Projects
 
-## 🌟 О проекте
+### 💬 [MCBuddy Spigot](https://github.com/mcbuddy-ai/mcbuddy-spigot)
 
-**McBuddy** объединяет возможности искусственного интеллекта и мир Minecraft, предлагая игрокам умного помощника, доступного прямо в игре и в Telegram. Задавайте вопросы о крафтах, механиках, командах — и получайте мгновенные ответы!
+The plugin for Spigot and Paper 26.3: `/ask` and `/askx` in the chat.
 
-Проект создан **для русскоязычного сообщества** игроков Minecraft с заботой о качестве кода и пользовательском опыте.
+- The assistant looks things up in the game while it answers: status, inventory with bundles and shulker boxes, whatever is under the crosshair, chests nearby, structures and biomes
+- Buttons under answers, recipe, enchanting, and villager windows, a notebook, goals with a boss bar, reminders
+- A live status like Claude Code: a spinner, a changing verb, and a line for each tool the assistant uses
+- Every player reads the plugin in their own language: English, Russian, Spanish, Portuguese, German
+- Tools see only the player who asked; anything that gives items or changes the world is for operators only
 
----
+### 🛠️ [MCBuddy Server](https://github.com/mcbuddy-ai/mcbuddy-server)
 
-## 📦 Компоненты экосистемы
+The backend: a Mastra agent on Bun that answers through OpenRouter, streams its work to the plugin, calls the plugin's game tools, searches the web, computes exactly, and keeps each player's conversation and memories. Run your own with Docker, or use the hosted one at `mcbuddy.ru`.
 
-### 💬 [McBuddy Spigot](https://github.com/mcbuddy-ai/mcbuddy-spigot)
+### 🤖 [MCBuddy Bot](https://github.com/mcbuddy-ai/mcbuddy-bot)
 
-**Плагин для Minecraft серверов** — добавляет команды `/ask` и `/askx` прямо в игровой чат!
+The Telegram bot, archived.
 
-- ✨ Спрашивайте об игре прямо в чате Minecraft
-- 🎯 Генерируйте и выполняйте команды через AI
-- 🎨 Красивая визуализация: анимации, частицы, звуки
-- 🛡️ Система безопасности для защиты сервера
+## Get started
 
-**Для кого**: Игроки Minecraft серверов на Spigot/Paper
+1. Download the plugin from [Releases](https://github.com/mcbuddy-ai/mcbuddy-spigot/releases) and put it in your server's `plugins/` folder.
+2. Restart the server.
+3. Ask: `/ask how do I craft a beacon?`
 
----
+## Try it live
 
-### 🛠️ [McBuddy Server](https://github.com/mcbuddy-ai/mcbuddy-server)
+MCBuddy runs on [Moonlands](https://minecraft.mairwunnx.com), a hard survival server. Join at `minecraft.mairwunnx.com`.
 
-**Бэкенд сервис** — обрабатывает запросы от плагина и бота, взаимодействует с AI.
+## From the same author
 
-- ⚡ Быстрый сервер на Bun.js
-- 🤖 Интеграция с различными AI-моделями через OpenRouter
-- 📊 Отслеживание использования и метрики
-- 🔒 Система ограничений и защита от спама
+- [Mo’Joins](https://github.com/MairwunNx/mojoins)—🎉 join and quit lines in each player's language
+- [Mo’Afks](https://github.com/MairwunNx/moafks)—🛡️ a safe AFK mode
+- [Mo’Bosses](https://github.com/mairwunnx/mobosses)—🏆 ordinary mobs become epic bosses
 
-**Для кого**: Разработчики, кто хочет развернуть собственный инстанс
-
----
-
-### 🤖 [McBuddy Bot](https://github.com/mcbuddy-ai/mcbuddy-bot)
-
-**Telegram-бот** — общайтесь с MCBuddy за пределами игры!
-
-- 💬 Задавайте вопросы о Minecraft в Telegram
-- 📱 Удобный интерфейс прямо в мессенджере
-- 🔄 Синхронизация контекста с игровыми запросами
-- 🌐 Доступен в любое время и в любом месте
-
-**Для кого**: Игроки, которые хотят узнавать об игре вне Minecraft
-
----
-
-## 🎯 Возможности
-
-### Для игроков
-- **Мгновенные ответы** на вопросы о Minecraft прямо в игре
-- **Помощь с крафтами**, механиками, командами сервера
-- **Доступность** через Telegram бота в любое время
-- **Понятные объяснения** на русском языке
-
-### Для администраторов
-- **Облегчение поддержки** игроков на сервере
-- **Автоматизация** ответов на частые вопросы
-- **Генерация команд** через AI для быстрой настройки
-- **Гибкая настройка** под нужды сервера
-
-### Для разработчиков
-- **Открытый исходный код** всех компонентов
-- **Современные технологии**: Kotlin, TypeScript, Bun
-- **Документация** и примеры использования
-- **Готовые Docker образы** для быстрого развертывания
-
----
-
-## 🚀 Быстрый старт
-
-### Для игроков
-1. Найдите сервер с установленным McBuddy плагином
-2. Используйте команду `/ask Как скрафтить алмазную кирку?`
-3. Или пишите боту в Telegram: `@mcbuddy_bot`
-
-### Для администраторов серверов
-1. Скачайте [McBuddy Spigot плагин](https://github.com/mcbuddy-ai/mcbuddy-spigot/releases)
-2. Установите в папку `plugins/` вашего сервера
-3. Перезапустите сервер и настройте в `config.yml`
-
-### Для разработчиков
-1. Изучите репозитории проектов
-2. Разверните [McBuddy Server](https://github.com/mcbuddy-ai/mcbuddy-server) через Docker
-3. Настройте API ключи и переменные окружения
-4. Подключите плагин или бота к вашему инстансу
-
----
-
-## 🛠️ Технологии
-
-McBuddy построен на современном стеке технологий:
-
-- **Kotlin** — для Spigot плагина
-- **TypeScript + Bun** — для сервера и бота
-- **OpenRouter** — доступ к различным AI-моделям
-- **Docker** — для удобного развертывания
-- **MongoDB + Redis** — для хранения данных и кэширования
-
----
-
-## 🤝 Сообщество
-
-Присоединяйтесь к сообществу McBuddy:
-
-- 💬 Задавайте вопросы в Issues репозиториев
-- 🐛 Сообщайте о багах и предлагайте улучшения
-- ⭐ Ставьте звёзды проектам, если они вам нравятся!
-- 🔧 Участвуйте в разработке через Pull Requests
-
----
-
-## 📖 Связанные проекты
-
-### От того же автора
-
-- [**Xi Manager**](https://github.com/mairwunnx/xi) — 🀄️ Telegram-бот с ИИ, стилизованный под личного помощника Xi
-- [**Dickobrazz**](https://github.com/mairwunnx/dickobrazz) — 🌶️ Развлекательный Telegram-бот с системой коков
-- [**Louisepizdon**](https://github.com/MairwunNx/louisepizdon) — 🥀 AI-бот для оценки внешности с фото
-- [**Mo'Bosses**](https://github.com/mairwunnx/mobosses) — 🏆 RPG плагин с системой боссов и прогрессии
-- [**Mo'Joins**](https://github.com/mairwunnx/mojoins) — 🎉 Кастомизация входа/выхода игроков
-- [**Mo'Afks**](https://github.com/mairwunnx/moafks) — 🛡️ AFK режим с иммунитетом к урону
-
----
-
-## 📜 Лицензия
-
-В целом ни о какой лицензии речи не идет для всех проектов, она не имеет никакого значения.
-
-Просто имейте в виду, что все проекты являются открытым исходным кодом и свободны для использования.
-
----
-
-![image](./media.png)
-
-🇷🇺 **Сделано в России с любовью.** ❤️
-
-*MCBuddy — это результат любви к игре Minecraft и современным технологиям. Проект создан для русскоязычного сообщества игроков, с заботой о качестве кода и пользовательском опыте.*
-
-> 🫡 Made by Pavel Erokhin (Павел Ерохин), aka mairwunnx
+> 🫡 Made by Pavel Erokhin (Павел Ерохин), aka mairwunnx.
