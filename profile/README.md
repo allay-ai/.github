@@ -1,47 +1,45 @@
 # 🪽 Allay
 
+[![Allay release](https://img.shields.io/github/v/release/allay-ai/minecraft?label=allay&logo=github)](https://github.com/allay-ai/minecraft/releases/latest) [![Allay Server release](https://img.shields.io/github/v/release/allay-ai/server?label=server&logo=github)](https://github.com/allay-ai/server/releases/latest) [![Spigot | Paper 26.3](https://img.shields.io/badge/Spigot%20%7C%20Paper-26.3-F7CF0D)](https://github.com/allay-ai/minecraft) [![Docker image](https://img.shields.io/badge/ghcr.io-allay--ai%2Fserver-2496ED?logo=docker&logoColor=white)](https://github.com/allay-ai/server/pkgs/container/server)
+
 ![Allay, an AI helper for Minecraft](https://raw.githubusercontent.com/allay-ai/.github/master/media/preview-minecraft.png)
 
-**Allay** is an AI helper for Minecraft players, named after the friendly mob that brings players what they need. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. Allay knows Java Edition inside out, searches the web for fresh facts, remembers each player, and answers in the language of the question.
+**Allay** is an AI helper for Minecraft, named after the friendly mob that brings players what they need. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. Allay has two parts: a plugin on your Minecraft server and a backend that runs the model.
 
-## Projects
+## Repositories
 
-### 💬 [Allay for Minecraft](https://github.com/allay-ai/minecraft)
-
-The plugin for Spigot, Paper 26.3, and their forks: `/ask`, `/askall`, `/askx`, and chat mode.
-
-- Allay looks things up in the game while it answers: status, inventory with bundles and shulker boxes, whatever is under the crosshair, chests nearby, structures and biomes
-- Buttons under answers, recipe, enchanting, and villager windows, a notebook, goals with a boss bar, reminders
-- A live status like Claude Code: a spinner, a changing verb, and a line for each tool Allay uses; and it sounds like an allay
-- Every player reads the plugin in their own language: English, Russian, Spanish, Portuguese, German
-- Tools see only the player who asked; anything that gives items or changes the world is for operators only
-
-### 🛠️ [Allay Server](https://github.com/allay-ai/server)
-
-The backend: a Mastra agent on Bun that answers through OpenRouter, streams its work to the plugin, calls the plugin's game tools, searches the web, computes exactly, and keeps each player's conversation and memories. Run your own with Docker, or use the hosted one at `allay.chat`.
-
-### 🤖 [Allay for Telegram](https://github.com/allay-ai/telegram)
-
-The Telegram bot, archived.
+- **[💬 minecraft](https://github.com/allay-ai/minecraft)**—the plugin for Spigot, Paper 26.3, and their forks: `/ask`, `/askall`, chat mode, trails, marks, and automation agents, in each player's language.
+- **[🛠️ server](https://github.com/allay-ai/server)**—the backend: an agent that reads the asker's game, searches the web, remembers each player, and comes with an admin panel. Run it with one Docker Compose file.
+- **[🤖 telegram](https://github.com/allay-ai/telegram)**—the old Telegram bot, archived.
 
 ## Get started
 
-1. Download the plugin from [Releases](https://github.com/allay-ai/minecraft/releases) and put it in your server's `plugins/` folder.
-2. Restart the server.
+1. Put [`allay-spigot.jar`](https://github.com/allay-ai/minecraft/releases/latest/download/allay-spigot.jar) into `plugins/` of a Spigot or Paper 26.3 server and restart it.
+2. Run `/allay link` for a subscription, bring your own OpenRouter key, or [host the backend yourself](https://github.com/allay-ai/server).
 3. Ask: `/ask how do I craft a beacon?`
 
 Coming from MCBuddy? Allay is its new name from 4.0.0 on, and it moves MCBuddy's data over by itself.
 
+## Documentation
+
+- **[Allay wiki](https://github.com/allay-ai/minecraft/wiki)**—installing the plugin, asking, commands, configuration, and languages.
+- **[Allay Server wiki](https://github.com/allay-ai/server/wiki)**—self-hosting with Docker, the admin panel, who pays for the model, and how the agent works.
+
 ## Try it live
 
-Allay runs on [Moonlands](https://minecraft.mairwunnx.com), a hard survival server. Join at `minecraft.mairwunnx.com`.
+Allay runs on [Moonlands](https://minecraft.mairwunnx.com), my hard survival server. Join at `minecraft.mairwunnx.com` and ask it something.
 
-## From the same author
+## Related projects
 
-- [Mo’Joins](https://github.com/MairwunNx/mojoins)—🎉 join and quit lines in each player's language
-- [Mo’Afks](https://github.com/MairwunNx/moafks)—🛡️ a safe AFK mode
-- [Mo’Bosses](https://github.com/mairwunnx/mobosses)—🏆 ordinary mobs become epic bosses
+- **[Moonlands](https://minecraft.mairwunnx.com)**—the hard-survival server where all of these run.
+- **[WorldAPI](https://github.com/MairwunNx/minecraft-worldapi)**—REST and WebSocket API to a Paper server's world, players, and stats.
+- **[Minecraft MCP](https://github.com/MairwunNx/minecraft-mcp)**—lets an AI client read and run a server through WorldAPI.
+- **[Mo’Joins](https://github.com/MairwunNx/mojoins)**—join and quit messages in each player's language.
+- **[Mo’Afks](https://github.com/MairwunNx/moafks)**—a safe AFK mode that doesn't block the night.
+- **[Mo’Bosses](https://github.com/MairwunNx/mobosses)**—monsters that spawn as bosses with classes, abilities, and loot.
+- **[minecraft-exporter](https://github.com/MairwunNx/minecraft-exporter)**—Prometheus metrics from WorldAPI.
+- **[minecraft-grafana](https://github.com/MairwunNx/minecraft-grafana)**—the Grafana dashboard for WorldAPI.
 
-The allay and its texture are Mojang's; the avatar is rendered from the game's own model.
+The allay and its texture are Mojang's. The avatar is rendered from the game's own model.
 
 > 🫡 Made by Pavel Erokhin (Павел Ерохин), aka mairwunnx.
