@@ -22,7 +22,7 @@ Coming from MCBuddy? Allay is its new name from 4.0.0 on. Run Allay 6.6 once to 
 
 ## Privacy
 
-Allay is built with EU (GDPR) and US privacy law in mind. On allay.chat, player data stays in the EU (Helsinki), and conversations, memories, deaths, settings, and traces are encrypted at rest with AES-256-GCM. Every player agrees before their first question and confirms their age, by their country's rules. With `/allay privacy` players see, export, and erase what's kept. The [privacy policy](https://allay.chat/privacy/) says what is kept, why, and for how long.
+Allay is EU (GDPR) and US privacy law friendly. On allay.chat, player data stays in the EU (Helsinki), and conversations, memories, deaths, settings, and traces are encrypted at rest with AES-256-GCM. Every player agrees before their first question and confirms their age, by their country's rules. With `/allay privacy` players see, export, and erase what's kept. The [privacy policy](https://allay.chat/privacy/) says what is kept, why, and for how long.
 
 ## Documentation
 
