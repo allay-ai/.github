@@ -1,22 +1,22 @@
 # 🪽 Allay
 
-[![Allay release](https://img.shields.io/github/v/release/allay-ai/minecraft?label=allay&logo=github)](https://github.com/allay-ai/minecraft/releases/latest) [![Allay Server release](https://img.shields.io/github/v/release/allay-ai/server?label=server&logo=github)](https://github.com/allay-ai/server/releases/latest) [![Spigot | Paper 26.3](https://img.shields.io/badge/Spigot%20%7C%20Paper-26.3-F7CF0D)](https://github.com/allay-ai/minecraft) [![Docker image](https://img.shields.io/badge/ghcr.io-allay--ai%2Fserver-2496ED?logo=docker&logoColor=white)](https://github.com/allay-ai/server/pkgs/container/server)
+[![Allay release](https://img.shields.io/github/v/release/allay-ai/minecraft?label=allay&logo=github)](https://github.com/allay-ai/minecraft/releases/latest) [![Allay Server release](https://img.shields.io/github/v/release/allay-ai/server?label=server&logo=github)](https://github.com/allay-ai/server/releases/latest) [![Spigot | Paper 26.3](https://img.shields.io/badge/Spigot%20%7C%20Paper-26.3-F7CF0D)](https://github.com/allay-ai/minecraft) [![Fabric | NeoForge 26.3](https://img.shields.io/badge/Fabric%20%7C%20NeoForge-26.3-DBD0B4)](https://github.com/allay-ai/minecraft) [![Docker image](https://img.shields.io/badge/ghcr.io-allay--ai%2Fserver-2496ED?logo=docker&logoColor=white)](https://github.com/allay-ai/server/pkgs/container/server)
 
 ![Allay, an AI helper for Minecraft](https://raw.githubusercontent.com/allay-ai/.github/master/media/preview-minecraft.png)
 
 <img src="https://raw.githubusercontent.com/allay-ai/.github/master/media/allay-in-game.gif" width="100%" alt="Allay in the game: a player types /ask, the status above the hotbar shows what Allay does, and the answer comes with buttons in the text">
 
-**Allay** is an AI helper for Minecraft, named after the friendly mob that brings players what they need. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. Allay has two parts: a plugin on your Minecraft server and a backend that runs the model.
+**Allay** is an AI helper for Minecraft, named after the friendly mob that brings players what they need. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. Allay has two parts: a plugin or mod in Minecraft, on your server or in your own singleplayer world, and a backend that runs the model.
 
 ## Repositories
 
-- **[💬 minecraft](https://github.com/allay-ai/minecraft)**—the plugin for Spigot, Paper 26.3, and their forks: `/ask`, `/askall`, chat mode, trails, marks, and automation agents, in each player's language.
+- **[💬 minecraft](https://github.com/allay-ai/minecraft)**—the plugin for Spigot, Paper 26.3, and their forks, and the mods for Fabric and NeoForge 26.3: `/ask`, `/askall`, chat mode, trails, marks, and automation agents, in each player's language.
 - **[🛠️ server](https://github.com/allay-ai/server)**—the backend: an agent that reads the asker's game, searches the web, remembers each player, and comes with an admin panel. Run it with one Docker Compose file.
 - **[🤖 telegram](https://github.com/allay-ai/telegram)**—the old Telegram bot, archived.
 
 ## Get started
 
-1. Put [`allay-spigot.jar`](https://github.com/allay-ai/minecraft/releases/latest/download/allay-spigot.jar) into `plugins/` of a Spigot or Paper 26.3 server and restart it.
+1. Put [`allay-spigot.jar`](https://github.com/allay-ai/minecraft/releases/latest/download/allay-spigot.jar) into `plugins/` of a Spigot or Paper 26.3 server, or [`allay-fabric.jar`](https://github.com/allay-ai/minecraft/releases/latest/download/allay-fabric.jar) (with Fabric API) or [`allay-neoforge.jar`](https://github.com/allay-ai/minecraft/releases/latest/download/allay-neoforge.jar) into `mods/` of a Fabric or NeoForge 26.3 server or your own game, and restart it.
 2. Run `/allay link` for a subscription, bring your own OpenRouter key, or [host the backend yourself](https://github.com/allay-ai/server).
 3. Ask: `/ask how do I craft a beacon?`
 
@@ -28,7 +28,7 @@ Allay is EU (GDPR) and US privacy law friendly. On allay.chat, player data stays
 
 ## Documentation
 
-- **[Allay wiki](https://github.com/allay-ai/minecraft/wiki)**—installing the plugin, asking, commands, configuration, and languages.
+- **[Allay wiki](https://github.com/allay-ai/minecraft/wiki)**—installing the plugin or a mod, asking, commands, configuration, and languages.
 - **[Allay Server wiki](https://github.com/allay-ai/server/wiki)**—self-hosting with Docker, the admin panel, who pays for the model, and how the agent works.
 
 ## Try it live
