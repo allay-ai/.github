@@ -2,6 +2,8 @@
 
 ![Allay, an AI helper for Minecraft](https://raw.githubusercontent.com/allay-ai/.github/master/media/preview-minecraft.png)
 
+<img src="https://raw.githubusercontent.com/allay-ai/.github/master/media/allay-in-game.gif" width="100%" alt="Allay in the game: a player types /ask, the status above the hotbar shows what Allay does, and the answer comes with buttons in the text">
+
 **Allay** is an AI helper for Minecraft players, named after the friendly mob that brings players what they need. A player types `/ask` in a server's chat and gets an answer grounded in their real game: their inventory, what they're looking at, the chests around them, the server's recipes and rules. Allay knows Java Edition inside out, searches the web for fresh facts, remembers each player, and answers in the language of the question.
 
 ## Projects
