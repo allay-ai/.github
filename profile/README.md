@@ -10,9 +10,9 @@
 
 ## Repositories
 
-- **[💬 minecraft](https://github.com/allay-ai/minecraft)**—the plugin for Spigot, Paper 26.3, and their forks, and the mods for Fabric and NeoForge 26.3: `/ask`, `/askall`, chat mode, trails, marks, and automation agents, in each player's language.
-- **[🛠️ server](https://github.com/allay-ai/server)**—the backend: an agent that reads the asker's game, searches the web, remembers each player, and comes with an admin panel. Run it with one Docker Compose file.
-- **[🤖 telegram](https://github.com/allay-ai/telegram)**—the old Telegram bot, archived.
+- **[💬 minecraft](https://github.com/allay-ai/minecraft)** – the plugin for Spigot, Paper 26.3, and their forks, and the mods for Fabric and NeoForge 26.3: `/ask`, `/askall`, chat mode, trails, marks, and automation agents, in each player's language.
+- **[🛠️ server](https://github.com/allay-ai/server)** – the backend: an agent that reads the asker's game, searches the web, remembers each player, and comes with an admin panel. Run it with one Docker Compose file.
+- **[🤖 telegram](https://github.com/allay-ai/telegram)** – the old Telegram bot, archived.
 
 ## Get started
 
@@ -28,8 +28,8 @@ Allay is EU (GDPR) and US privacy law friendly. On allay.chat, player data stays
 
 ## Documentation
 
-- **[Allay wiki](https://github.com/allay-ai/minecraft/wiki)**—installing the plugin or a mod, asking, commands, configuration, and languages.
-- **[Allay Server wiki](https://github.com/allay-ai/server/wiki)**—self-hosting with Docker, the admin panel, who pays for the model, and how the agent works.
+- **[Allay wiki](https://github.com/allay-ai/minecraft/wiki)** – installing the plugin or a mod, asking, commands, configuration, and languages.
+- **[Allay Server wiki](https://github.com/allay-ai/server/wiki)** – self-hosting with Docker, the admin panel, who pays for the model, and how the agent works.
 
 ## Try it live
 
@@ -37,14 +37,14 @@ Allay runs on [Moonlands](https://minecraft.mairwunnx.com), my hard survival ser
 
 ## Related projects
 
-- **[Moonlands](https://minecraft.mairwunnx.com)**—the hard-survival server where all of these run.
-- **[WorldAPI](https://github.com/MairwunNx/minecraft-worldapi)**—REST and WebSocket API to a Paper server's world, players, and stats.
-- **[Minecraft MCP](https://github.com/MairwunNx/minecraft-mcp)**—lets an AI client read and run a server through WorldAPI.
-- **[Mo’Joins](https://github.com/MairwunNx/mojoins)**—join and quit messages in each player's language.
-- **[Mo’Afks](https://github.com/MairwunNx/moafks)**—a safe AFK mode that doesn't block the night.
-- **[Mo’Bosses](https://github.com/MairwunNx/mobosses)**—monsters that spawn as bosses with classes, abilities, and loot.
-- **[minecraft-exporter](https://github.com/MairwunNx/minecraft-exporter)**—Prometheus metrics from WorldAPI.
-- **[minecraft-grafana](https://github.com/MairwunNx/minecraft-grafana)**—the Grafana dashboard for WorldAPI.
+- **[Moonlands](https://minecraft.mairwunnx.com)** – the hard-survival server where all of these run.
+- **[WorldAPI](https://github.com/MairwunNx/minecraft-worldapi)** – REST and WebSocket API to the world, players, and stats of a Paper, Fabric, or NeoForge server.
+- **[Minecraft MCP](https://github.com/MairwunNx/minecraft-mcp)** – lets an AI client read and run a server through WorldAPI.
+- **[Mo’Joins](https://github.com/MairwunNx/mojoins)** – join and quit messages in each player's language.
+- **[Mo’Afks](https://github.com/MairwunNx/moafks)** – a safe AFK mode that doesn't block the night.
+- **[Mo’Bosses](https://github.com/MairwunNx/mobosses)** – monsters that spawn as bosses with classes, abilities, and loot.
+- **[minecraft-exporter](https://github.com/MairwunNx/minecraft-exporter)** – Prometheus metrics from WorldAPI.
+- **[minecraft-grafana](https://github.com/MairwunNx/minecraft-grafana)** – the Grafana dashboard for WorldAPI.
 
 The allay and its texture are Mojang's. The avatar is rendered from the game's own model.
 
